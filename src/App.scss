@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*9. Create a root stacking context*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*------Specific CSS-------*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#navBarTitle a {
+  display: inline-block;
+  margin: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+.navBarLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navBarLinks li, .navBarLinks a {
+  margin: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+/* Home CSS */
+
+.homeMain {
   display: flex;
   flex-direction: column;
+}
+.homeTop {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 320px;
+}
+
+.homeTitle {
+  position: relative;
+}
+
+#titleDeveloper, #titleTeacher {
+  position: absolute;
+  font-size: 75px;
+  z-index: 2;
+}
+
+#titleTeacher {
+  top: 110px;
+  margin-left: 30px;
+}
+
+#titleAnd {
+  position: absolute;
+  font-size: 150px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.homeImages {
+  position: relative;
+}
+
+.imagePicture {
+  position: absolute;
+  z-index: 2;
+  left: 170px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%; 
+  overflow: hidden;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-self: flex-end;
+  margin-right: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.imagePicture img {
+  width: 550px; 
+  height: 550px;
+  object-fit: cover;
+  object-position: -20px 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imageGreenRect {
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  background-color: rgb(160, 244, 121);
+  width: 550px;
+  height: 20px;
+}
+
+.imageBlackTri {
+  position: absolute;
+  z-index: 1;
+  top: -110px;
+  left: 20px;
+  transform: rotate(-25deg);
+  font-size: 400px;
+  font-weight: bolder;
+}
+
+.homeMiddle {
+  background-color: rgb(41, 87, 21);
 }
