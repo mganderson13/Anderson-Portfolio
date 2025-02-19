@@ -24,6 +24,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+}
+
 /*9. Create a root stacking context*/
 #root, #__next {
   isolation: isolate;
@@ -68,7 +72,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
-  padding-top: 50px;
+  padding-top: 75px;
   padding-left: 30px;
   padding-bottom: 320px;
 }
@@ -79,7 +83,7 @@ nav {
 
 #titleDeveloper, #titleTeacher {
   position: absolute;
-  font-size: 75px;
+  font-size: 85px;
   z-index: 2;
 }
 
@@ -90,7 +94,7 @@ nav {
 
 #titleAnd {
   position: absolute;
-  font-size: 150px;
+  font-size: 160px;
   z-index: 1;
   opacity: 0.5;
 }
@@ -140,6 +144,202 @@ nav {
   font-weight: bolder;
 }
 
-.homeMiddle {
+.homeProjectsTitle {
   background-color: rgb(41, 87, 21);
+  color: white;
+  height: 500px;
+  padding: 50px;
+}
+
+.homeProjectsTitle h1 {
+  font-size: 50px;
+}
+
+.subtitle {
+  display: flex;
+  align-items: first baseline;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+
+.subtitle p {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.homeProjectsTitle h2 {
+  font-size: 50px;
+  color: white;
+}
+
+#opaqueAnd {
+  font-size: 70px;
+  color: rgb(127, 128, 126);
+}
+
+.accentLine {
+  background-color: white;
+  width: 150px;
+  height: 3px;
+  margin-top: 20px;
+}
+
+#paragraphText {
+  width: 720px;
+  height: 100px;
+  margin-left: 150px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#largeGreyText {
+  font-size: 80px;
+  color: rgb(127, 128, 126);
+  font-style: italic;
+  font-weight: 100;
+  margin-left: 250px;
+}
+
+.projectArea {
+  display: flex;
+  height: 300px;
+  margin: 20px;
+  margin-top: 100px;
+  background-color: white;
+  color: black;
+}
+
+.projectDivide {
+  width: 90vw;
+  height: 10px;
+  background-color: white;
+  box-shadow: 0 4px 2px -2px gray; 
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.projectTitle {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 100;
+  margin-left: 50px;
+}
+
+.projectImage {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px whitesmoke;
+}
+
+.projectDescription {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
+  margin-left: 80px;
+}
+
+.projectStack {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.homeContacts {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: bisque;
+  margin-top: 50px;
+}
+
+.contactLink {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.contactCard {
+  z-index: 2;
+  background-color: rgb(41, 87, 21);
+  color: white;
+  width: 15vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 10px;
+  padding-top: 40px;
+  box-shadow: 3px 3px 10px rgb(61, 59, 55);
+}
+
+.contactCard img {
+  height: 65px;
+  width: 65px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.contactLargeText {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.imageTanTri {
+  z-index: 1;
+  position: absolute;
+  color: rgb(247, 207, 157);
+  top: -55px;
+  left: 20px;
+  transform: rotate(25deg);
+  font-size: 200px;
+  font-weight: bolder;
+}
+
+.homeFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(47, 46, 46);
+  color: rgb(127, 128, 126);
+  width: 100vw;
+  height: 50px;
+  font-size: 10px;
+}
+
+.footerText, .footerImages {
+  display: flex;
+  justify-content: center;
+}
+
+.footerImages {
+font-size: 20px;
+}
+
+.footerImages i{
+  margin-right: 20px;
+
+}
+
+.footerText i {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.contactIcons {
+  color: rgb(127, 128, 126); /* Ensure the default color */
+  text-decoration: none; /* Remove any underline */
+}
+
+.contactIcons:visited,
+.contactIcons:hover,
+.contactIcons:active {
+  color: rgb(127, 128, 126); /* Override any color changes */
 }
