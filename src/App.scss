@@ -137,10 +137,10 @@ nav {
 .imageBlackTri {
   position: absolute;
   z-index: 1;
-  top: -110px;
-  left: 20px;
+  top: -75px;
+  left: 28px;
   transform: rotate(-25deg);
-  font-size: 400px;
+  font-size: 380px;
   font-weight: bolder;
 }
 
@@ -342,4 +342,8 @@ font-size: 20px;
 .contactIcons:hover,
 .contactIcons:active {
   color: rgb(127, 128, 126); /* Override any color changes */
+}
+
+#titleWebDeveloper {
+  font-size: 85px;
 }
