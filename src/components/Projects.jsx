@@ -1,8 +1,80 @@
+import visualCalPicture from "../assets/visualCalPicture.png";
+import codeImage from "../assets/codeImage.png";
+import greenArrowImage from "../assets/greenArrowImage.png";
+
 function Projects() {
     return (
         <>
-        <h1 id="titleWebDeveloper">{"<Web Development Projects />"}</h1>
-        <p></p>
+    <div className="projectsPageHeader">
+        <div className="homeTitle">
+        <h1 id="titleDeveloper">{"<Websites />"}</h1>
+        <h1 id="titleAnd">&</h1>
+        <h1 id="titleTeacher">{"<Applications />"}</h1>
+        </div>
+        <div className="homeImages">
+            <img id="codeImage" src={codeImage}/>
+            <img id="greenArrowImage" src={greenArrowImage}/>
+                    </div>
+        </div>
+
+        <div className="projectsPageTop">
+        <p>With an in depth knowledge of HTML, CSS, and JavaScript I have created applications that incorporate APIs, SQL and NoSQL databases, and authentication. 
+            My websites and applications are visually pleasing, educational and fun!
+        </p>
+        <br></br>
+        <p>I have worked collaboratively with fellow software engineers providing me with ample experience with Git, managing merge conflicts, and writing clear and succinct code.
+        My diverse skills make me an excellent and unique software developer, and a perfect member for any team.
+        </p>
+        </div>
+
+    <div className="projectsPageMain">
+        <div className="projectsPageDiv" id="visualCalculator">
+            <img className="projectsPageImage" src={visualCalPicture} alt="visual calculator application"/>
+            <div className="projectsPageText">
+            <p className="projectsPageName">Visual Aid Calculator</p>
+            <p className="projectsPageDescription">Our Visual Calculator was designed by two teacher-programmers who wanted to create a method for students in grades 1-5 to visualize the math processes 
+            that they are currently exploring. Using our personal expertise and established curriculum guidelines, we chose representations of the four main operations - addition, subtraction, multiplication, and division -
+            to take the calculator from an abstract tool to something more concrete that reinforces common math models.
+            </p>
+            <br></br>
+            <p className="projectsPageStack">This project is developed using only HTML, CSS, and JavaScript, with sprite sheets to aid in the arrow animations. It is a showcase of the serviceability of vanilla JavaScript.
+            Because the animations are dynamic, the DOM elements are created in JavaScript functions based on the input from the calculator. The functions create, design, adjust, and place 
+            divs to illustrate the operations using vanilla JavaScript - no animation expertise here! Just two teachers using the skills they have to help students!
+            </p>
+            </div>
+        </div>
+
+        <div className="projectsPageDiv" id="classroomCashRegister">
+            <img className="projectsPageImage" alt="cash register application"/>
+            <div className="projectsPageText">
+            <p className="projectsPageName">Classroom Cash Register</p>
+            <p className="projectsPageDescription">This classroom tool is assitive technology to practice money and counting change, role play 
+                career skills, or educators can use Classroom Cash Register as a tool at school events. The realistic Cash Register Interface mimics the layout 
+                and functionality of actual cash registers. The Administrator Control Panel enables educators to customize the app creating their own store and adding or editing inventory items 
+                and prompts to cater to individual needs and learning objectives.
+            </p>
+            <br></br>
+            <p className="projectsPageStack">The Counter Amounter application is built using a combination of technologies chosen for their specific strengths and suitability for the project's objectives:
+                React: Provides a dynamic and interactive user interface, allowing for a smooth and engaging user experience.
+                Express and Node: Power the backend server, enabling data storage and manipulation, and facilitating communication between the front-end and the database.
+                SQLite: Serves as the lightweight database, providing efficient storage for inventory and user information. With an engineer created authentication system.
+            </p>
+            </div>
+        </div>
+   
+        <div className="projectsPageDiv" id="bookBranch">
+        <img className="projectsPageImage" alt="book branch application"/>
+        <div className="projectsPageText">
+        <p className="projectsPageName">Book Branch</p>
+        <p className="projectsPageDescription">This book exploration app allows users to search for books by title, author, or keywords using the Google Books API. Users can save and rate their favorite books and write reviews. 
+        Users can view detailed information about each book, including title, author, description, and cover image. Or visit their profile to see the books they have saved and reviewed.
+        </p>
+        <br></br>
+        <p className="projectsPageStack">Created using React and Nodejs, this JavaScript app incorporates a public API and the NoSQL database MongoDB, 
+        which stores user data and book preferences. Firebase Auth makes for a secure and easy sign in process.</p>
+        </div>
+        </div>
+    </div>
         </>
     )
 }

@@ -230,7 +230,12 @@ nav {
   height: auto;
   object-fit: contain;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px whitesmoke;
+  box-shadow: 0px 0px 5px 1px rgb(149, 149, 148);
+  padding: 10px;
+}
+
+.projectImage:hover {
+  box-shadow: 0px 0px 5px 5px rgb(246, 229, 198);
 }
 
 .projectDescription {
@@ -278,6 +283,12 @@ nav {
   padding: 10px;
   padding-top: 40px;
   box-shadow: 3px 3px 10px rgb(61, 59, 55);
+  transition: 0.2s;
+}
+
+.contactCard:hover {
+  box-shadow: 3px 3px 10px rgb(243, 242, 240);
+
 }
 
 .contactCard img {
@@ -333,17 +344,152 @@ font-size: 20px;
   margin-right: 5px;
 }
 
-.contactIcons {
-  color: rgb(127, 128, 126); /* Ensure the default color */
-  text-decoration: none; /* Remove any underline */
-}
-
+.contactIcons,
 .contactIcons:visited,
 .contactIcons:hover,
 .contactIcons:active {
   color: rgb(127, 128, 126); /* Override any color changes */
+  text-decoration: none;
 }
 
-#titleWebDeveloper {
+.projectsPageHeader {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 100px;
+  padding-top: 75px;
+  padding-left: 30px;
+  padding-bottom: 320px;
+}
+
+#codeImage {
+  position: absolute;
+  z-index: 2;
+  left: 90px;
+  top: -10px;
+  width: 250px;
+  height: 320px;
+  border-radius: 80% 50% 80% 50%;
+  object-fit: cover;
+  object-position: .2px;
+}
+
+#greenArrowImage {
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  height: 300px;
+  top: -50px;
+  left: 30px;
+}
+
+.projectsPageTop {
+  padding: 50px;
+  font-size: 20px;
+  background-color: rgb(41, 87, 21);
+  color: white;
+  font-weight: 200;
+}
+
+.projectsPageMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 233, 216);
+}
+
+.projectsPageDiv {
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgb(249, 223, 192);
+  width: 80vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsPageImage {
+  width: 40%;
+  height: auto;
+  transition: 0.2s;
+}
+
+.projectsPageImage:hover {
+  transform: scale(1.05);
+}
+
+.projectsPageName {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+}
+
+.projectsPageDescription {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.projectsPageStack {
+  font-size: 20px;
+}
+
+
+#aboutPageText {
+  width: 100vw;
+  height: 1000px;
+  padding: 100px;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.aboutPageSpan {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.contactTitle {
+  margin: 30px;
+  margin-top: 100px;
   font-size: 85px;
+}
+
+.contactGreenRect {
+  background-color: rgb(160, 244, 121);
+  width: 1050px;
+  height: 10px;
+  margin-left: 30px;
+}
+
+.contactWrapper {
+  display: flex;
+  padding: 50px;
+  justify-content: space-around;
+}
+
+.contactLargeGreyText {
+  font-size: 50px;
+  color: rgb(127, 128, 126);
+  font-style: italic;
+  font-weight: 100;
+}
+
+.contactImage {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgb(210, 208, 208);
+  transition: transform .2s;
+}
+
+.contactImage:hover {
+  transform: scale(1.05);
 }

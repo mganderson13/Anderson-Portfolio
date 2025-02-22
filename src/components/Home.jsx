@@ -1,8 +1,6 @@
 import profilePicture from "../assets/profilePicture.jpg";
 import HomeContact from "./HomeContact";
 import HomeProjects from "./HomeProjects";
-import Footer from "./Footer";
-
 
 function Home() {
     return (
@@ -41,7 +39,6 @@ function Home() {
 
     <div className="homeEnd">
         <HomeContact />
-        <Footer />
     </div>
     </div>
 
