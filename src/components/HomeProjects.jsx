@@ -7,7 +7,8 @@ function HomeProjects() {
         <p id="largeGreyText">Take a look and play around!</p>
         
         <div className="projectArea" id="visualCalculator">
-            <img className="projectImage" src={visualCalPicture} alt="visual calculator application"/>
+            <img className="projectImage" src={visualCalPicture} alt="visual calculator application"
+            onClick={() => window.open("https://maribeth2024.github.io/VisualCalculator/", "_blank")}/>
             <div className="projectText">
             <p className="projectTitle">Visual Aid Calculator</p>
             <p className="projectDescription">is a fully functional calculator with visual representations of addition, subtraction, multiplication, and division 

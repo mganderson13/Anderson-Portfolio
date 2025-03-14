@@ -29,7 +29,8 @@ function Projects() {
 
     <div className="projectsPageMain">
         <div className="projectsPageDiv" id="visualCalculator">
-            <img className="projectsPageImage" src={visualCalPicture} alt="visual calculator application"/>
+            <img className="projectsPageImage" src={visualCalPicture} alt="visual calculator application"
+            onClick={() => window.open("https://maribeth2024.github.io/VisualCalculator/", "_blank")}/>
             <div className="projectsPageText">
             <p className="projectsPageName">Visual Aid Calculator</p>
             <p className="projectsPageDescription">Our Visual Calculator was designed by two teacher-programmers who wanted to create a method for students in grades 1-5 to visualize the math processes 
