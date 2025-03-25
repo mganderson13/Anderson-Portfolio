@@ -1,4 +1,5 @@
 import visualCalPicture from "../assets/visualCalPicture.png";
+import bookBranchPicture from "../assets/bookBranchPicture.png";
 import codeImage from "../assets/codeImage.png";
 import greenArrowImage from "../assets/greenArrowImage.png";
 
@@ -12,8 +13,8 @@ function Projects() {
         <h1 id="titleTeacher">{"<Applications />"}</h1>
         </div>
         <div className="homeImages">
-            <img id="codeImage" src={codeImage}/>
-            <img id="greenArrowImage" src={greenArrowImage}/>
+            <img id="codeImage" src={codeImage} alt="code"/>
+            <img id="greenArrowImage" src={greenArrowImage} alt="green arrow"/>
                     </div>
         </div>
 
@@ -44,8 +45,22 @@ function Projects() {
             </p>
             </div>
         </div>
+   
+        <div className="projectsPageDiv" id="bookBranch">
+        <img className="projectsPageImage" src={bookBranchPicture} alt="book branch application"
+        onClick={() => window.open("https://book-branch-454719.uc.r.appspot.com", "_blank")}/>
+        <div className="projectsPageText">
+        <p className="projectsPageName">Book Branch</p>
+        <p className="projectsPageDescription">This book exploration app allows users to search for books by title, author, or keywords using the Google Books API. Users can save and rate their favorite books and write reviews. 
+        Users can view detailed information about each book, including title, author, description, and cover image. Or visit their profile to see the books they have saved and reviewed.
+        </p>
+        <br></br>
+        <p className="projectsPageStack">Created using React and Nodejs, this JavaScript app incorporates a public API and the NoSQL database MongoDB, 
+        which stores user data and book preferences. Firebase Auth makes for a secure and easy sign in process.</p>
+        </div>
+        </div>
 
-        <div className="projectsPageDiv" id="classroomCashRegister">
+    <div className="projectsPageDiv" id="classroomCashRegister">
             <img className="projectsPageImage" alt="cash register application"/>
             <div className="projectsPageText">
             <p className="projectsPageName">Classroom Cash Register</p>
@@ -62,20 +77,7 @@ function Projects() {
             </p>
             </div>
         </div>
-   
-        <div className="projectsPageDiv" id="bookBranch">
-        <img className="projectsPageImage" alt="book branch application"/>
-        <div className="projectsPageText">
-        <p className="projectsPageName">Book Branch</p>
-        <p className="projectsPageDescription">This book exploration app allows users to search for books by title, author, or keywords using the Google Books API. Users can save and rate their favorite books and write reviews. 
-        Users can view detailed information about each book, including title, author, description, and cover image. Or visit their profile to see the books they have saved and reviewed.
-        </p>
-        <br></br>
-        <p className="projectsPageStack">Created using React and Nodejs, this JavaScript app incorporates a public API and the NoSQL database MongoDB, 
-        which stores user data and book preferences. Firebase Auth makes for a secure and easy sign in process.</p>
         </div>
-        </div>
-    </div>
         </>
     )
 }

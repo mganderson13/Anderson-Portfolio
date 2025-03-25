@@ -1,4 +1,5 @@
 import visualCalPicture from "../assets/visualCalPicture.png";
+import bookBranchPicture from "../assets/bookBranchPicture.png";
 //import cashRegisterPicture from "../assets/cashRegisterPicture.jpg";
 
 function HomeProjects() {
@@ -19,6 +20,18 @@ function HomeProjects() {
 
         <div className="projectDivide"></div>
 
+        <div className="projectArea" id="bookBranch">
+            <img className="projectImage" src={bookBranchPicture} alt="book branch application"
+            onClick={() => window.open("https://book-branch-454719.uc.r.appspot.com", "_blank")}/>
+            <div className="projectText">
+            <p className="projectTitle">Book Branch</p>
+            <p className="projectDescription">is a way for book lovers to explore new titles, track their reads, and review books</p>
+            <p className="projectStack">Google Books API provides an extensive library <br></br> MongoDB helps store user data and book preferences</p>
+            </div>
+        </div>
+
+        <div className="projectDivide"></div>
+
         <div className="projectArea" id="classroomCashRegister">
             <img className="projectImage" alt="cash register application"/>
             <div className="projectText">
@@ -27,17 +40,6 @@ function HomeProjects() {
                 career skills, or educators can use Classroom Cash Register as a tool at school events</p>
             <p className="projectStack">Developed with React, Nodejs, and SQLite, allowing educators to create accounts with personalize store inventory</p>
             </div>
-        </div>
-
-        <div className="projectDivide"></div>
-
-        <div className="projectArea" id="bookBranch">
-        <img className="projectImage" alt="book branch application"/>
-        <div className="projectText">
-        <p className="projectTitle">Book Branch</p>
-        <p className="projectDescription">is a way for book lovers to explore new titles, track their reads, and review books</p>
-        <p className="projectStack">Google Books API provides an extensive library <br></br> MongoDB helps store user data and book preferences</p>
-        </div>
         </div>
         </>
     )
