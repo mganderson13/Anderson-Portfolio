@@ -1,9 +1,13 @@
 import visualCalPicture from "../assets/visualCalPicture.png";
 import bookBranchPicture from "../assets/bookBranchPicture.png";
+import cashRegisterPicture from "../assets/cashRegisterPicture.png";
 import codeImage from "../assets/codeImage.png";
 import greenArrowImage from "../assets/greenArrowImage.png";
+import { useNavigate } from "react-router-dom";
 
 function Projects() {
+    const navigate = useNavigate();
+
     return (
         <>
     <div className="projectsPageHeader">
@@ -61,13 +65,14 @@ function Projects() {
         </div>
 
     <div className="projectsPageDiv" id="classroomCashRegister">
-            <img className="projectsPageImage" alt="cash register application"/>
+            <img className="projectsPageImage" src={cashRegisterPicture} alt="cash register application"
+            onClick={() => navigate("/cashregister")}/>
             <div className="projectsPageText">
             <p className="projectsPageName">Classroom Cash Register</p>
             <p className="projectsPageDescription">This classroom tool is assitive technology to practice money and counting change, role play 
                 career skills, or educators can use Classroom Cash Register as a tool at school events. The realistic Cash Register Interface mimics the layout 
                 and functionality of actual cash registers. The Administrator Control Panel enables educators to customize the app creating their own store and adding or editing inventory items 
-                and prompts to cater to individual needs and learning objectives.
+                to cater to individual needs and learning objectives.
             </p>
             <br></br>
             <p className="projectsPageStack">The Counter Amounter application is built using a combination of technologies chosen for their specific strengths and suitability for the project's objectives:

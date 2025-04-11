@@ -556,3 +556,14 @@ font-size: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 10px;
 }
+
+.classroomCashRegisterVideoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  video {
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+}

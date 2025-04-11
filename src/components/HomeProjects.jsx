@@ -1,8 +1,11 @@
 import visualCalPicture from "../assets/visualCalPicture.png";
 import bookBranchPicture from "../assets/bookBranchPicture.png";
-//import cashRegisterPicture from "../assets/cashRegisterPicture.jpg";
+import cashRegisterPicture from "../assets/cashRegisterPicture.png";
+import { useNavigate } from "react-router-dom";
 
 function HomeProjects() {
+    const navigate = useNavigate();
+
     return(
         <>
         <p id="largeGreyText">Take a look and play around!</p>
@@ -33,7 +36,8 @@ function HomeProjects() {
         <div className="projectDivide"></div>
 
         <div className="projectArea" id="classroomCashRegister">
-            <img className="projectImage" alt="cash register application"/>
+            <img className="projectImage" src={cashRegisterPicture} alt="cash register application"
+            onClick={() => navigate("/cashregister")}/>
             <div className="projectText">
             <p className="projectTitle">Classroom Cash Register</p>
             <p className="projectDescription">is assitive technology to practice money and counting change, role play 
