@@ -1,7 +1,3 @@
-import gitHubImage from "../assets/github.png";
-import linkedInImage from "../assets/linkedIn.jpg";
-import emailImage from "../assets/email.jpeg";
-
 function Footer() {
 return (
     <>
@@ -12,13 +8,13 @@ return (
         <p>Created by Marianne Anderson 2025</p>
         </div>
     <div className="footerImages">
-    <a href="https://github.com/mganderson13" target="_blank" className="contactIcons">
+    <a href="https://github.com/mganderson13" target="_blank" rel="noreferrer" className="contactIcons">
     <i class="fa-brands fa-square-github"></i>
     </a>
-    <a href="https://www.linkedin.com/in/marianne-anderson13/" target="_blank" className="contactIcons">
+    <a href="https://www.linkedin.com/in/marianne-anderson13/" target="_blank" rel="noreferrer" className="contactIcons">
     <i class="fa-brands fa-linkedin"></i> 
     </a>  
-    <a href="mailto:mganderson13@gmail.com" target="_blank" className="contactIcons">
+    <a href="mailto:mganderson13@gmail.com" target="_blank" rel="noreferrer" className="contactIcons">
     <i class="fa-solid fa-envelope-open-text"></i>
     </a>
     

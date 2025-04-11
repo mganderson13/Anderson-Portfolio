@@ -17,7 +17,7 @@ function Home() {
         <div className="imageGreenRect"></div>
         <p className="imageBlackTri">{"<"}</p>
         <div className="imagePicture">
-            <img src={profilePicture} alt="Anderson Profile Picture"/>
+            <img src={profilePicture} alt="Anderson Profile"/>
         </div>
     </div>
     </div>
