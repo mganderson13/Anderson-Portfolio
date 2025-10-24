@@ -48,6 +48,37 @@ nav {
   color: black;
 }
 
+#navBarTitle a:hover {
+  text-decoration: underline;
+}
+
+.sideBarLinks {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 30px;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.901);
+  box-shadow: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sideBarLinks li, .sideBarLinks a {
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+.sideBarLinks li:hover, .sideBarLinks a:hover, .close:hover {
+  text-decoration: underline;
+}
+
 .navBarLinks {
   display: flex;
   flex-direction: row;
@@ -59,6 +90,24 @@ nav {
   text-decoration: none;
   list-style-type: none;
   color: black;
+}
+
+.navBarLinks li:hover, .navBarLinks a:hover {
+  text-decoration: underline;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+
+  .menuButton{ 
+    display: block;
+  }
 }
 
 /* Home CSS */
