@@ -1,4 +1,5 @@
-import profilePicture from "../assets/profilePicture.jpg";
+import homepageProfilePic from "../assets/homepageProfilePic.png";
+import homepageTitle from "../assets/homepageTitle.png";
 import HomeContact from "./HomeContact";
 import HomeProjects from "./HomeProjects";
 
@@ -8,17 +9,11 @@ function Home() {
     <div className="homeMain">
 
     <div className="homeTop">
-    <div className="homeTitle">
-    <h1 id="titleDeveloper">{"<Developer />"}</h1>
-    <h1 id="titleAnd">&</h1>
-    <h1 id="titleTeacher">{"<Teacher />"}</h1>
+    <div className="homepageTitleContainer">
+    <img className="homepageTitle" src={homepageTitle} alt="Developer and Teacher"/>
     </div>
-    <div className="homeImages">
-        <div className="imageGreenRect"></div>
-        <p className="imageBlackTri">{"<"}</p>
-        <div className="imagePicture">
-            <img src={profilePicture} alt="Anderson Profile"/>
-        </div>
+    <div className="homepageProfilePicContainer">
+    <img className="homepageProfilePic" src={homepageProfilePic} alt="Anderson Profile"/>
     </div>
     </div>
     <div className="homeMiddle">
