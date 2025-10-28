@@ -116,6 +116,7 @@ nav {
   display: flex;
   flex-direction: column;
 }
+
 .homeTop {
   position: relative;
   display: grid;
@@ -433,38 +434,59 @@ font-size: 20px;
   text-decoration: none;
 }
 
-.projectsPageHeader {
+// Projects Page
+
+.projectsTop {
   position: relative;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 100px;
-  padding-top: 75px;
-  padding-left: 30px;
-  padding-bottom: 320px;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
 }
 
-#codeImage {
-  position: absolute;
-  z-index: 2;
-  left: 90px;
-  top: -10px;
-  width: 250px;
-  height: 320px;
-  border-radius: 80% 50% 80% 50%;
-  object-fit: cover;
-  object-position: .2px;
+.projectsTitleContainer {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  padding-left: 20px;
+  margin-top: 80px;
 }
 
-#greenArrowImage {
-  position: absolute;
-  z-index: 1;
-  width: 400px;
-  height: 300px;
-  top: -50px;
-  left: 30px;
+.projectsPicContainer {
+  width: 100%;
+  max-width: 650px;
+  max-height: auto;
+  overflow: visible;
+  justify-self: end;
+  padding-right: 100px;
 }
 
-.projectsPageTop {
+#codePic {
+  margin-top: 45px;
+  margin-bottom: -30px; /* pushes image down into homeMiddle */
+  position: relative;
+  z-index: 2; /* keeps it above the next section */
+}
+
+@media (max-width: 800px) {
+  .projectsTop {
+    grid-template-columns: 1fr; /* single column */
+    grid-template-rows: auto auto;
+  }
+
+  /* Reverse the visual order: right image on top */
+  .projectsTitleContainer {
+    justify-self: center;
+    grid-row: 2;
+  }
+
+  .projectsPicContainer {
+    grid-row: 1;
+    justify-self: center;  
+    padding-right: 0px;
+  }
+}
+
+.projectsMiddle {
   padding: 50px;
   font-size: 20px;
   background-color: rgb(41, 87, 21);
@@ -496,7 +518,7 @@ font-size: 20px;
 }
 
 .projectsPageImage {
-  width: 40%;
+  width: 45%;
   height: auto;
   transition: 0.2s;
 }
@@ -522,6 +544,21 @@ font-size: 20px;
   font-size: 20px;
 }
 
+@media (max-width: 800px) {
+  .projectsPageImage {
+    width: 80%;
+  }
+  .projectsPageDescription,.projectsPageStack {
+    font-size: 15px;
+  }
+
+  .projectsPageDiv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+//About Page
 
 #aboutPageText {
   width: 100vw;
@@ -535,6 +572,19 @@ font-size: 20px;
   font-size: 30px;
   font-weight: 400;
 }
+
+@media (max-width: 800px) {
+  #aboutPageText {
+    font-size: 3.5vw;
+    padding: 10px;
+  }
+
+  .aboutPageSpan {
+    font-size: 4.5vw;
+  }
+}
+
+//Contact Page
 
 .contactTitle {
   margin: 30px;
@@ -575,13 +625,37 @@ font-size: 20px;
   transform: scale(1.05);
 }
 
+@media (max-width: 800px) {
+  .contactTitle {
+    font-size: 10vw;
+  }
+
+  .contactGreenRect {
+    width: 99%;
+    margin-left: 10px;
+  }
+
+  .contactWrapper {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contactLargeGreyText {
+    font-size: 8vw;
+  }
+}
+
+//Resume Page
+
 .resumeContainer {
   margin: 50px;
 }
 
 .resumeTop {
   width: 100%;
-  height: 110px;
+  min-height: 110px;
   background-color: rgb(41, 87, 21);
   text-align: center;
   margin-bottom: 30px;
@@ -636,6 +710,22 @@ font-size: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .resumeContainer {
+    margin: 15px;
+  }
+
+  .resumeSection {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .resumeSkills {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 }
 
 .classroomCashRegisterVideoContainer {

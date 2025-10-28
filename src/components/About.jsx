@@ -1,21 +1,16 @@
-import profilePicture from "../assets/profilePicture.jpg";
+import homepageProfilePic from "../assets/homepageProfilePic.png";
+import homepageTitle from "../assets/homepageTitle.png";
 
 function About() {
 
     return(
         <>
         <div className="homeTop">
-            <div className="homeTitle">
-            <h1 id="titleDeveloper">{"<Developer />"}</h1>
-            <h1 id="titleAnd">&</h1>
-            <h1 id="titleTeacher">{"<Teacher />"}</h1>
+            <div className="homepageTitleContainer">
+                <img className="homepageTitle" src={homepageTitle} alt="Developer and Teacher"/>
             </div>
-            <div className="homeImages">
-                <div className="imageGreenRect"></div>
-                <p className="imageBlackTri">{"<"}</p>
-                <div className="imagePicture">
-                    <img src={profilePicture} alt="Anderson Profile"/>
-                </div>
+            <div className="homepageProfilePicContainer">
+                <img className="homepageProfilePic" src={homepageProfilePic} alt="Anderson Profile"/>
             </div>
         </div>
         <div className="homeProjectsTitle">
@@ -35,7 +30,7 @@ function About() {
                 <br></br>It is not an understatement when people say that Elementary School teachers do it all. Instructing students in every subject, problem solving in every moment, and facilitating community between students and other educators makes for talented, kind, and hard-working professionals. 
             </p>
             <br></br>
-            <p> Being a teacher has made me <span className="aboutPageSpan"> adaptable, analytical, compassionate, and multifacited.</span>
+            <p> Being a teacher has made me <span className="aboutPageSpan"> adaptable, analytical, compassionate, and multifaceted.</span>
             </p>
             <br></br>
             <p>I enjoy working collaboratively with fellow software engineers and am an invaluable team member thanks to my ability to clearly express myself, understand others, and mediate commmunication issues. 

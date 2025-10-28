@@ -11,13 +11,13 @@ function Resume() {
     <div className="resumeSection">
         <h3>EDUCATION</h3>
         <div className="resumeTitleDate">
-        <h4>Fullstack Academy Web Development Bootcamp</h4>
-        <p>September/2023 - December/2023</p>
+        <h4>Fullstack Academy</h4>
+        <p>September 2023 - December 2023</p>
         </div>
         <p>Software Engineering Certificate | Full-time, Full Stack Javascript Web Development Immersive</p>
         <div className="resumeTitleDate">
         <h4>Middlebury College</h4>
-        <p>September/2010 -  May/2014</p>
+        <p>September 2010 -  May 2014</p>
         </div>
         <p>Bachelor of Arts in Gender Studies and Education</p>
     </div> 
@@ -29,14 +29,21 @@ function Resume() {
             <li>JavaScript (ES6+)</li>
             <li>CSS</li>
             <li>HTML</li>
+            <li>Typescript</li>
             <li>React</li>
             <li>Next.js</li>
             <li>Redux</li>
             <li>Node.js</li>
             <li>Express.js</li>
+            <li>C#</li>
+            <li>ASP.NET</li>
             <li>Git</li>
             <li>MongoDB</li>
-            <li>SQL</li>
+            <li>SQL/relational databases</li>
+            <li>NoSQL/MongoDB</li>
+            <li>AWS</li>
+            <li>Google Cloud Platform</li>
+            <li>Docker</li>
         </ul>
     </div>
     <div className="resumeDivide"></div>
@@ -45,7 +52,7 @@ function Resume() {
         <h3>EXPERIENCE</h3>
         <div className="resumeTitleDate">
         <h4>Teacher | Chicago Public Schools | Chicago, IL</h4>
-        <p>August/2021 - present</p>
+        <p>August 2015 - present</p>
         </div>
         <ul>
             <li>Used data from standardized, summative, and formative assessments to create unit plans for literacy, science, and social studies with extra supports and extension activities for varying levels in the classroom</li>
@@ -53,22 +60,23 @@ function Resume() {
             <li>Collaborated with councilor and 3 special education teachers to provide extra emotional support to 10 students</li>
         </ul>
         <div className="resumeTitleDate">
-        <h4>English Teacher | Colegio Británico | Cartagena, Colombia</h4>
-        <p>August/2019 - June/2020</p>
+        <h4>Web Content Manager | CERA Ear Clinic | Chicago, IL</h4>
+        <p>May 2025 - present</p>
         </div>
         <ul>
-            <li>Adapted Cambridge English curriculum by assessing student levels, modifying the curriculum, and supplementing resources from English as a Second Language curriculums, for 40 6th grade native Spanish speaking students</li>
-            <li>Improved student language competency by an average of 1.5 levels through literacy and content specific curriculum </li>
-            <li>Led classroom community building games, reflections, and student driven conversations on a daily basis which led to improved respect and communication among students inside and out of the classroom</li>
+            <li>Designed and built the CERA Ear Clinic website in collaboration with the founder</li>
+            <li>Manage and update website landing pages/content using a Content Management System (CMS)</li>
+            <li>Wrote custom code scripts to integrate an electronic medical record (EMR) system into the website</li>
+            <li>Launched SEO and social media strategy, securing the website’s first 100 visits from Google and Facebook</li>
         </ul>
         <div className="resumeTitleDate">
-        <h4>Teacher | Acero Charter Schools | Chicago, IL</h4>
-        <p>August/2017 - June/2018</p>
+        <h4>Intern | Alter Learning | Chicago, IL</h4>
+        <p>June 2024 - September 2024</p>
         </div>
         <ul>
-            <li>Increased student standardized NWEA scores by an average of 10 percentiles through 4 weekly small group intensives</li>
-            <li>Organized and ran 3 community events throughout the school year that brought 350 family members to the school to facilitate family and school relationships as well as relationships between families</li>
-            <li>Implemented and taught after-school tutoring for 2 groups of 10 students over the course of 4 weeks</li>
+            <li>Facilitated Agile/Scrum meetings and sprint planning, to ensure team alignment and project momentum</li>
+            <li>Collaborated closely on a cross-functional team with engineers, designers, product managers, and educators to deliver interactive components of a VR classroom experience, focusing on usability and functionality</li>
+            <li>Helped define sprint goals, track progress, and assign tasks using a Kanban board to maintain workflow</li>
         </ul>
     </div>
 
@@ -76,6 +84,17 @@ function Resume() {
 
     <div className="resumeSection">
         <h3>TECHNICAL PROJECTS</h3>
+            <div className="resumeTechnicalProjects">
+            <div className="resumeTitleDate">
+            <h4>Deal Finder Browser Extension | Developer | <a href="https://chromewebstore.google.com/detail/deal-finder-for-community/nnkmcobdablmjepfholbkhgjlgnnllgl">https://chromewebstore.google.com/deal-finder/</a></h4>
+            <p>October 2025</p>
+            </div>
+            <ul>
+                <li>Deal Finder is a Chrome browser extension using JavaScript to detect and display deal alerts</li>
+                <li>Integrated scraped data from partner websites to dynamically notify users of available discounts and benefits in real time based on the active domain</li>
+                <li>Authored the Manifest V3 configuration and successfully published the extension to the Chrome Web Store, managing the full lifecycle from concept to deployment</li>
+            </ul>
+            </div>
             <div className="resumeTechnicalProjects">
             <div className="resumeTitleDate">
             <h4>Visual Aid Calculator | Co-Developer | <a href="https://maribeth2024.github.io/VisualCalculator/">https://maribeth2024.github.io/VisualCalculator/</a></h4>
@@ -90,7 +109,7 @@ function Resume() {
             </div>
             <div className="resumeTechnicalProjects">
             <div className="resumeTitleDate">
-            <h4>Book Branch | Developer | <a href="https://book-branch-454719.uc.r.appspot.com/">https://book-branch-454719.uc.r.appspot.com/</a></h4>
+            <h4>Book Branch | Developer | <a href="https://book-branch-454719.uc.r.appspot.com/">https://book-branch.com/</a></h4>
             <p>February 2024</p>
             </div>
             <ul>

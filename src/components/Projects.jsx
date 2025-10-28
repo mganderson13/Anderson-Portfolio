@@ -1,8 +1,8 @@
 import visualCalPicture from "../assets/visualCalPicture.png";
 import bookBranchPicture from "../assets/bookBranchPicture.png";
 import cashRegisterPicture from "../assets/cashRegisterPicture.png";
-import codeImage from "../assets/codeImage.png";
-import greenArrowImage from "../assets/greenArrowImage.png";
+import projectsPageImage from "../assets/projectsPageImage.png";
+import projectsPageTitle from "../assets/projectsPageTitle.png";
 import { useNavigate } from "react-router-dom";
 
 function Projects() {
@@ -10,19 +10,16 @@ function Projects() {
 
     return (
         <>
-    <div className="projectsPageHeader">
-        <div className="homeTitle">
-        <h1 id="titleDeveloper">{"<Websites />"}</h1>
-        <h1 id="titleAnd">&</h1>
-        <h1 id="titleTeacher">{"<Applications />"}</h1>
+    <div className="projectsTop">
+        <div className="projectsTitleContainer">
+            <img src={projectsPageTitle} alt="Websites and Applications"/>
         </div>
-        <div className="homeImages">
-            <img id="codeImage" src={codeImage} alt="code"/>
-            <img id="greenArrowImage" src={greenArrowImage} alt="green arrow"/>
-                    </div>
+        <div className="projectsPicContainer">
+            <img id="codePic" src={projectsPageImage} alt="code"/>
+        </div>
         </div>
 
-        <div className="projectsPageTop">
+        <div className="projectsMiddle">
         <p>With an in depth knowledge of HTML, CSS, and JavaScript I have created applications that incorporate APIs, SQL and NoSQL databases, and authentication. 
             My websites and applications are visually pleasing, educational and fun!
         </p>

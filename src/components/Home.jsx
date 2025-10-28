@@ -9,12 +9,12 @@ function Home() {
     <div className="homeMain">
 
     <div className="homeTop">
-    <div className="homepageTitleContainer">
-    <img className="homepageTitle" src={homepageTitle} alt="Developer and Teacher"/>
-    </div>
-    <div className="homepageProfilePicContainer">
-    <img className="homepageProfilePic" src={homepageProfilePic} alt="Anderson Profile"/>
-    </div>
+        <div className="homepageTitleContainer">
+            <img className="homepageTitle" src={homepageTitle} alt="Developer and Teacher"/>
+        </div>
+        <div className="homepageProfilePicContainer">
+            <img className="homepageProfilePic" src={homepageProfilePic} alt="Anderson Profile"/>
+        </div>
     </div>
     <div className="homeMiddle">
     <div className="homeProjectsTitle">
